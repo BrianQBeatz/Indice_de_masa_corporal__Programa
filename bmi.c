@@ -20,6 +20,18 @@ int main(void)
     printf("18.5 a 24.9   |  Normal \n");
     printf(" 25.0 a 29.9  |  Sobrepeso \n");
     printf("     >=30     |  Obesidad \n");
+    
+    printf("\n");
+
+    if (imc >= 30)
+        printf("Usted posee la Condición: Obesidad");
+    else if (imc <= 29.9 && imc >= 25)
+            printf("Usted posee la Condición: Sobrepeso");
+        else if (imc <= 24.9 && imc >= 18.5)
+                printf("Usted posee la Condición: Normal");
+            else if (imc < 18.5)
+                    printf("Usted posee la Condición: Bajo peso");
+
 
     return 0;
 }
